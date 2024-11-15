@@ -234,4 +234,64 @@ mark,
   }
 }
 
-/*Estilos pripios*/
+/*Estilos pripios-Andrés Ospina*/
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+.header-nombre{
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-nombre{
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+/* Sobre mí */
+.fila{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sobre-mi-1 {
+  flex-basis: 35%;
+}
+.sobre-mi-1 img{
+  width: 100%;
+}
+
+.sobre-mi-2{
+  flex-basis: 60%;
+}
+
+.redes-sociales{
+  margin-top: 30px;
+}
+.redes-sociales{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: black;
+  display: inline-block;
+}
+
+.redes-sociales a{
+  font-size: 20px;
+}
+
