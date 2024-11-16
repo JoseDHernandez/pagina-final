@@ -288,3 +288,64 @@ nav a:hover {
 .redes-sociales a {
   font-size: 20px;
 }
+
+/* Estilos propios Daniel Tavera ( Skills-container) */
+
+/* Estilo para los encabezados */
+.skills-container h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.img-programming {
+  display: flex;
+  justify-content: center; /* Horizontal */
+  align-items: center; /* Vertical */
+  height: 100vh; /* Ajusta la altura del contenedor */
+}
+
+.img-programming img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contenedor de la cuadrícula */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 2 columnas si hay espacio */
+  gap: 20px;
+  padding: 10px;
+}
+.skills-container h4 {
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* Contenedor de las listas de habilidades */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skills-list img {
+  transition: transform 0.2s;
+}
+
+/* Efecto hover en los íconos */
+.skills-list img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo para las secciones (cajitas) */
+.skills-section {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
