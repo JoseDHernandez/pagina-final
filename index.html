@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,9 +22,10 @@
       </nav>
     </header>
     <!--Todo dentro de u container-->
-    <div class="container">
+    <main class="container">
       <!--Sobre mí-->
       <section>
+        <h1>José David Hernández Hortúa</h1>
         <div class="fila">
           <div class="sobre-mi-1">
             <img
@@ -37,7 +38,7 @@
             />
           </div>
           <div class="sobre-mi-2">
-            <h1>👨‍💻 About Me</h1>
+            <h2>👨‍💻 About Me</h2>
             <div class="contenido">
               <ul>
                 <li>
@@ -46,7 +47,7 @@
                 </li>
                 <li>
                   🎓 I have a Technical Degree in Software Programming from
-                  SENA.
+                  <abbr title="Servicio Nacional de Aprendizaje">SENA</abbr>.
                 </li>
                 <li>
                   💻 I’m passionate about Web Development and have worked on
@@ -66,139 +67,260 @@
         </div>
       </section>
       <!--Skills Daniel Tavera-->
-      <div class="skills-container">
-        
-        <h1>🛠️ Skills</h1>
-       
+      <section>
+        <h2>🛠️ Skills</h2>
+
         <div class="img-programming">
-          <img src="img/lenguajesDeProgramacion.jpg" alt="lenguajesDeProgramacion">
+          <img
+            src="img/lenguajesDeProgramacion.jpg"
+            alt="lenguajesDeProgramacion"
+          />
         </div>
 
         <div class="skills-grid">
-          <section class="skills-section">
-            <h4>Programming Languages:</h4>
+          <article class="card">
+            <h3>Programming Languages:</h3>
             <div class="skills-list">
-              
               <ul>
-                <li><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript"></li>
-                <li><img src="https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="php"></li>
-                <li><img src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="java"></li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="javascript"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
+                    alt="php"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white"
+                    alt="java"
+                  />
+                </li>
               </ul>
-                                                
             </div>
-          </section>
-          
-          <section class="skills-section">
-            <h4>Web Development:</h4>
+          </article>
+
+          <section class="card">
+            <h3>Web Development:</h3>
             <div class="skills-list">
               <ul>
-                <li><img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5"></li>
-                <li><img src="https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"></li>
-                <li><img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="-React"></li>
-                <li><img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="-Node"></li>
-                <li><img src="https://img.shields.io/badge/-Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="-Express"></li>
-                <li> <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind-css"></li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="html5"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="css3"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                    alt="-React"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                    alt="-Node"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+                    alt="-Express"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="tailwind-css"
+                  />
+                </li>
               </ul>
-              
-            </div>
-          </section>
-          
-          <section class="skills-section">
-            <h4>Databases:</h4>
-            <div class="skills-list">
-              <ul>
-                <li><img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></li>
-                <li><img src="https://img.shields.io/badge/-Oracle_SQL-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle_SQL"></li>
-                <li><img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb"></li>
-              </ul>
-          
             </div>
           </section>
 
-          <section class="skills-section">
-            <h4>Frameworks and Libraries:</h4>
-            <div class="skills-list">
-
-              <ul>
-                <li><img src="https://img.shields.io/badge/-React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="-React"></li>
-                <li><img src="https://img.shields.io/badge/-Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="-Express"></li>
-                <li><img src="https://img.shields.io/badge/-Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="-Socket"></li>
-                <li><img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind-css"></li>
-                <li><img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap"></li>
-              </ul>
-                      
-            </div>
-          </section>
-          
-          <section class="skills-section">
-            <h4>Application Development:</h4>
+          <section class="card">
+            <h3>Databases:</h3>
             <div class="skills-list">
               <ul>
-                <li> <img src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="java"></li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"
+                    alt="MySQL"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Oracle_SQL-F80000?style=for-the-badge&logo=oracle&logoColor=white"
+                    alt="Oracle_SQL"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"
+                    alt="mongodb"
+                  />
+                </li>
               </ul>
-            
-            </div>
-          </section>
-            
-          <section class="skills-section">
-            <h4>Version Control:</h4>
-            <div class="skills-list">
-              <ul>
-                <li><img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></li>
-                <li><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></li>
-              </ul>
-                          
-            </div>
-          </section>
-          
-          <section class="skills-section">
-            <h4>API Integration and Development:</h4>
-            <div class="skills-list">
-              <ul>
-                <li><img src="https://img.shields.io/badge/-RESTful_APIs-000000?style=for-the-badge&logo=restful&logoColor=white" alt="-RESTful_APIs"></li>
-                <li><img src="https://img.shields.io/badge/-WebSockets-010101?style=for-the-badge&logo=websockets&logoColor=white" alt="websockets"></li>
-              </ul>
-              
-            </div>
-          </section>
-            
-          <section class="skills-section">
-            <h4>Tools and IDEs:</h4>
-            <div class="skills-list">
-              <ul>
-                <li><img src="https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="visual-studio-code"></li>
-                <li><img src="https://img.shields.io/badge/-NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white" alt="-NetBeans"></li>
-              </ul>
-            </div>
-          </section>
-            
-          <section class="skills-section">
-            <h4>Agile Methodologies:</h4>
-            <div class="skills-list">
-              <ul>
-                <li><img src="https://img.shields.io/badge/-Kanban-007ACC?style=for-the-badge&logo=kanban&logoColor=white" alt="kanban"></li>
-              </ul>
-              
             </div>
           </section>
 
-          <section class="skills-section">
-            <h4>Other:</h4>
+          <section class="card">
+            <h3>Frameworks and Libraries:</h3>
             <div class="skills-list">
               <ul>
-                <li><img src="https://img.shields.io/badge/-Responsive_Design-0096D6?style=for-the-badge&logo=responsive-design&logoColor=white" alt="responsive-design"></li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+                    alt="-React"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+                    alt="-Express"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white"
+                    alt="-Socket"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="tailwind-css"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                    alt="bootstrap"
+                  />
+                </li>
               </ul>
-              
             </div>
           </section>
-        </div> 
-      </div>
 
+          <section class="card">
+            <h3>Application Development:</h3>
+            <div class="skills-list">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white"
+                    alt="java"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Version Control:</h3>
+            <div class="skills-list">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+                    alt="Git"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+                    alt="GitHub"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>API Integration and Development:</h3>
+            <div class="skills-list">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-RESTful_APIs-000000?style=for-the-badge&logo=restful&logoColor=white"
+                    alt="-RESTful_APIs"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-WebSockets-010101?style=for-the-badge&logo=websockets&logoColor=white"
+                    alt="websockets"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Tools and IDEs:</h3>
+            <div class="skills-list">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"
+                    alt="visual-studio-code"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white"
+                    alt="-NetBeans"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Agile Methodologies:</h3>
+            <div class="skills-list">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Kanban-007ACC?style=for-the-badge&logo=kanban&logoColor=white"
+                    alt="kanban"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Other:</h3>
+            <div class="skills-list">
+              <ul>
+                <li>
+                  <img
+                    src="https://img.shields.io/badge/-Responsive_Design-0096D6?style=for-the-badge&logo=responsive-design&logoColor=white"
+                    alt="responsive-design"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <hr />
       <!--Contacto-->
       <section>
         <div class="fila">
-          <div class="contacto-central">
-            <h1 class="sub-titulo">🌐 Connect with Me</h1>
+          <div>
+            <h2>🌐 Connect with Me</h2>
             <div class="redes-sociales">
               <a href="https://linkedin.com/in/josedhernandezh"
                 >LinkedIn <i class="fa-brands fa-linkedin-in"></i
@@ -213,6 +335,6 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
   </body>
 </html>
