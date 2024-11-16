@@ -12,21 +12,25 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  font-size: clamp(16px, 1.5vw, 18px);
 }
 
 /* Tipografía */
-h1,
-h2,
-h3,
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+}
+h3 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
 h4 {
-  text-wrap: balance;
-  color: #1a1a1a;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
   text-wrap: pretty;
   color: #555555;
   margin-bottom: 1em;
@@ -95,6 +99,7 @@ ol {
 li {
   margin-bottom: 0.5em;
   font-family: "Roboto", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 /* Tablas */
@@ -135,11 +140,10 @@ img {
 
 figcaption {
   margin-top: 0.5em;
-  font-size: 0.9em;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: #666666;
   font-style: italic;
 }
-
 /* Contenedores */
 .container {
   width: 90%;
@@ -147,7 +151,6 @@ figcaption {
   margin: 0 auto;
   padding: 20px;
 }
-
 /* Tarjetas */
 .card {
   background-color: #f7f7f7;
@@ -160,7 +163,7 @@ figcaption {
 }
 
 .card:hover {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.308);
 }
 
 /* Resaltado de texto */
@@ -175,14 +178,6 @@ mark,
 
 /* Responsividad */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.6em;
-  }
-
   .container {
     width: 95%;
     padding: 10px;
@@ -205,18 +200,10 @@ mark,
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-
   p,
   li,
   figcaption {
-    font-size: 0.9em;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
   }
 
   .container {
@@ -234,36 +221,43 @@ mark,
   }
 }
 
-/*Estilos pripios-Andrés Ospina*/
+/*Estilos pripios-Andrés Ospina (pagina principal - revisado)*/
 
-nav{
+nav {
+  background-color: #333333;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+}
+nav ul {
+  margin: 0px !important;
+  padding: 0px;
+  width: 100%;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
 }
-
-.logo{
-  width: 140px;
-}
-
-nav ul li{
-  display: inline-block;
+nav ul li {
   list-style: none;
-  margin: 10px 20px;
+  margin: 0px;
 }
-.header-nombre{
-  margin-top: 20%;
-  font-size: 30px;
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #e0e0e0;
+  width: 20vw;
+  height: 8vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.header-nombre{
-  font-size: 30px;
-  margin-top: 20px;
+nav a:hover {
+  background-color: #555555;
+  color: #ffffff;
 }
-
 /* Sobre mí */
-.fila{
+.fila {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -272,18 +266,18 @@ nav ul li{
 .sobre-mi-1 {
   flex-basis: 35%;
 }
-.sobre-mi-1 img{
+.sobre-mi-1 img {
   width: 100%;
 }
 
-.sobre-mi-2{
+.sobre-mi-2 {
   flex-basis: 60%;
 }
 
-.redes-sociales{
+.redes-sociales {
   margin-top: 30px;
 }
-.redes-sociales{
+.redes-sociales {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -291,7 +285,6 @@ nav ul li{
   display: inline-block;
 }
 
-.redes-sociales a{
+.redes-sociales a {
   font-size: 20px;
 }
-
