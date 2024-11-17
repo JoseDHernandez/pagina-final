@@ -485,11 +485,11 @@ nav a:hover {
 
 /*Cinena in java*/
 
-.titulo{
+.titulo {
   text-align: center;
 }
 
-.collapsible{
+.collapsible {
   background-color: #333333;
   color: white;
   cursor: pointer;
@@ -502,27 +502,27 @@ nav a:hover {
   margin: 5px;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
   background-color: #555555;
   color: #ffffff;
 }
 
 .collapsible:after {
-  content:'\002B';
+  content: "\002B";
   color: white;
-  font-width: bold;
+  font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
-.active:after{
-  content:'\2212';
+.active:after {
+  content: "\2212";
 }
 
-.content{
+.content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-
 }
