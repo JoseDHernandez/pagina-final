@@ -146,20 +146,7 @@
         or deploying the accordio below.
         <details>
           <summary>View all screenshots</summary>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
-            sapiente quae, consequatur ut qui, libero in ea incidunt et
-            exercitationem tempora quis ratione id temporibus iure excepturi
-            saepe voluptatem aliquam.
-          </p>
-          <ul>
-            <li>asdasd</li>
-            <li>adssdad</li>
-          </ul>
-          <ol>
-            <li>asdasd</li>
-            <li>adssdad</li>
-          </ol>
+
           <article class="gallery">
             <h3>Home page</h3>
             <figure>
@@ -373,22 +360,22 @@
                 Cors for socket.io: <br />
 
                 <pre>
-                  const io = new SocketServer(server, { 
-                    cors: {
-                      origin: urlClient,
-                      methods: ["GET", "POST", "PUT", "DELETE"],
-                    },
-                  });</pre
+const io = new SocketServer(server, { 
+  cors: {
+    origin: urlClient,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  },
+});</pre
                 >
                 <br />
                 Cors for Express: <br />
                 <pre>
-                  app.use(
-                    cors({
-                      origin: urlClient,
-                      methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-                    })
-                  );</pre
+app.use(
+  cors({
+    origin: urlClient,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  })
+);</pre
                 >
                 <br />Morgan format: <br />
                 <code>app.use(morgan("dev"));</code>

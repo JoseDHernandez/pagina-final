@@ -55,7 +55,14 @@ pre {
   font-family: "Courier New", monospace;
   color: #333333;
 }
-
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
 /* Enlaces */
 a {
   color: #1a1a1a;
@@ -301,7 +308,7 @@ details[open] summary::after {
     font-size: 0.9em;
   }
   .gallery img {
-    max-width: 95vw;
+    max-width: 100%;
   }
   .p-left {
     padding-left: 0;
@@ -317,7 +324,7 @@ details[open] summary::after {
     width: 50vh;
   }
   .skills-grid {
-    display: block;
+    display: block !important;
   }
 }
 
