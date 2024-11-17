@@ -316,6 +316,9 @@ details[open] summary::after {
   .fila img {
     width: 50vh;
   }
+  .skills-grid {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
