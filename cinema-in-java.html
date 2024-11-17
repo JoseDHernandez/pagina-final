@@ -39,38 +39,39 @@
       <section>
         <h2>Features</h2>
 
-        <button class="collapsible">Graphical User Interface</button>
-        <div class="content">
+        <details class="informacion" >
+          <summary>Graphical User Interface</summary>
           <p>
             Created with Java Swing and JOptionPanel.
           </p>
-        </div>
+        </details>
 
-        <button class="collapsible">Account System</button>
-        <div class="content">
+        <details class="informacion" >
+          <summary>Account System</summary>
           <p>
             A basic account system with roles such as administrator and cashier,
             each offering customized options and views. Users can log in using
             usernames and passwords stored in a non-relational database (MongoDB).
           </p>
-        </div>
+        </details>
 
-        <button class="collapsible">Seats Selector</button>
-        <div class="content">
+        <details class="informacion" >
+          <summary>Seats Selector</summary>
           <p>
             The users can select the available seats based on date, feature/dimension
             (2D, 3D,4D), showtime and seats already sold.
           </p>
-        </div>
+        </details>
 
-        <button class="collapsible">Film Data Record</button>
-        <div class="content">
+        <details class="informacion" >
+          <summary>Film Data Record</summary>
           <p>
             The administrator can record film data such as title, actors list,
             classification, date, genres, description or synopsis, director,
             duration and film poster. The cashier can view this data.
           </p>
-        </div>
+        </details>
+
       </section>
 
 
@@ -84,8 +85,16 @@
       </section>
 
       <!--Galeria-->
+
+
       <section>
         <h2>Screenshots</h2>
+        You can view the images in a
+        <button onclick="OpenModal()">gallery</button>
+        or deploying the accordio below.
+        <details>
+          <summary>View all screenshots</summary>
+
         <article class="gallery">
           <h3>Main Screen</h3>
           <figure>
@@ -169,6 +178,7 @@
           </figure>
 
         </article>
+          </details>
       </section>
       <section>
         <h2>Installation</h2>
