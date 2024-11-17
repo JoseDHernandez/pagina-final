@@ -8,8 +8,6 @@ if (getIndex != -1 && Figures[getIndex].childElementCount == 2)
 const Modal = document.querySelector(".Modal");
 let Close = !0;
 
-OpenModal(0);
-
 function OpenModal(Index) {
   Modal.open = Close;
   Modal.id = Close ? "Modal" : "ModalClose";
