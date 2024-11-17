@@ -420,3 +420,47 @@ nav a:hover {
 .skills-list img:hover {
   transform: scale(1.1);
 }
+
+/*Cinena in java*/
+
+.titulo{
+  text-align: center;
+}
+
+.collapsible{
+  background-color: #333333;
+  color: white;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+.collapsible:after {
+  content:'\002B';
+  color: white;
+  font-width: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after{
+  content:'\2212';
+}
+
+.content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
