@@ -188,7 +188,7 @@
             <code>git clone https://github.com/JoseDHernandez/cinema-in-java.git</code>
           </li>
           <li>
-            Open the options in the button with text "Opciones". You'll need a valid MongoDB URI and database.
+            Open the options in the button with text "Opciones". You'll need a valid <strong>MongoDB URI</strong> and database.
           </li>
           <li>
             Introduce the URI and name of database, you can test the connection or create the default structure and data.
@@ -327,6 +327,112 @@
         </p>
       </section>
     </main>
+    <!--Galeria-->
+    <dialog
+    class="Modal"
+    id="ModalClose"
+    role="dialog"
+    aria-labelledby="modalTitle"
+    aria-describedby="modalDescription"
+  >
+    <div class="ContentModal">
+      <div class="headModal">
+        <h3 class="Title" id="modalTitle">Galería</h3>
+        <button
+          class="CloseModal"
+          aria-label="Cerrar la galería"
+          onclick="OpenModal()"
+          tabindex="2"
+        >
+          <div></div>
+        </button>
+      </div>
+      <div class="bodyModal" id="modalDescription">
+        <div id="Gallery" role="region" aria-live="polite">
+          <div class="Gallery-button">
+            <button id="Pre" aria-label="Imagen anterior" tabindex="0">
+              <div class="buttonArrow"></div>
+            </button>
+          </div>
+          <div class="View">
+            
+            <figure>
+              <img
+              id="ActualImg"
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/bf380227-76ea-41e6-ad56-6d517282cbb4"
+                alt="1 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/f71b7436-745b-4510-a81e-091a9cc894bd"
+                alt="2 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/7a42206f-c8aa-44dc-8e49-f840459ebf23"
+                alt="3 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/79c78ead-8a8f-4b31-8ed9-ea2b9cc66fb1"
+                alt="4 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/0e18960f-e9da-429a-9c02-3f9e2bb6396e"
+                alt="5 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/297dcea5-3a62-40dc-958f-d1f643adcc38"
+                alt="6 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/ed926640-6ea2-4395-9580-95a5503bed9c"
+                alt="7 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure>
+              <img
+                src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/ac2ddc46-945e-4aa5-8f7d-eeb6e40f882e"
+                alt="8 de 13"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <!-- Fin del bloque de imagenes -->
+          </div>
+          <div class="Gallery-button">
+            <button id="Nex" aria-label="Imagen siguiente" tabindex="1">
+              <div class="buttonArrow"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <!--Fin galeria-->
     <!--footer-->
     <footer id="#Contact">
       <div class="footer-container">
@@ -345,115 +451,6 @@
           </div>
         </div>
       </div>
-      <!--Galeria-->
-      <dialog
-        class="Modal"
-        id="ModalClose"
-        role="dialog"
-        aria-labelledby="modalTitle"
-        aria-describedby="modalDescription"
-      >
-        <div class="ContentModal">
-          <div class="headModal">
-            <h3 class="Title" id="modalTitle">Galería</h3>
-            <button
-              class="CloseModal"
-              aria-label="Cerrar la galería"
-              onclick="OpenModal()"
-              tabindex="2"
-            >
-              <div></div>
-            </button>
-          </div>
-          <div class="bodyModal" id="modalDescription">
-            <div id="Gallery" role="region" aria-live="polite">
-              <div class="Gallery-button">
-                <button id="Pre" aria-label="Imagen anterior" tabindex="0">
-                  <div class="buttonArrow"></div>
-                </button>
-              </div>
-              <div class="View">
-                <!-- Imagenes (agregar a la primera id="ActualImg")-->
-                <!--
-            <figure><img id="ActualImg" src="#" alt="null" loading="lazy" decoding="async" /></figure>
-            -->
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/bf380227-76ea-41e6-ad56-6d517282cbb4"
-                    alt="1 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/f71b7436-745b-4510-a81e-091a9cc894bd"
-                    alt="2 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/7a42206f-c8aa-44dc-8e49-f840459ebf23"
-                    alt="3 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/79c78ead-8a8f-4b31-8ed9-ea2b9cc66fb1"
-                    alt="4 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/0e18960f-e9da-429a-9c02-3f9e2bb6396e"
-                    alt="5 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/297dcea5-3a62-40dc-958f-d1f643adcc38"
-                    alt="6 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/ed926640-6ea2-4395-9580-95a5503bed9c"
-                    alt="7 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <figure>
-                  <img
-                    src="https://github.com/JoseDHernandez/cinema-in-java/assets/128190435/ac2ddc46-945e-4aa5-8f7d-eeb6e40f882e"
-                    alt="8 de 13"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-                <!-- Fin del bloque de imagenes -->
-              </div>
-              <div class="Gallery-button">
-                <button id="Nex" aria-label="Imagen siguiente" tabindex="1">
-                  <div class="buttonArrow"></div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </dialog>
-      <!--Fin galeria-->
-
       <div class="footer-bottom">
         <p>José David Hernández Hortúa</p>
       </div>
