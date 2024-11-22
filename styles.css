@@ -194,7 +194,7 @@ hr.accent {
 }
 /* Tarjetas */
 .card {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border: 1px solid #e0e0e0;
   padding: 20px;
   margin: 0.5em 0;
@@ -325,6 +325,30 @@ details[open] summary::after {
   }
   .skills-grid {
     display: block !important;
+  }
+  .contact-section {
+    padding: 1.5rem;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
   }
 }
 
@@ -483,20 +507,49 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/*Cinena in java*/
-
-.titulo{
+/* contacto */
+.contact-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 3rem 0;
+}
+.contact-section h2 {
   text-align: center;
 }
+.contact-section p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-.informacion{
-  color: white;
-  cursor: pointer;
-  padding: 16px;
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: monospace;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  margin: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
 }
